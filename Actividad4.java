@@ -3,12 +3,23 @@ public class Actividad4 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("¿Cuál es el año actual?");
-		int year_actual = sc.nextInt();
-		System.out.println("¿Cuál es tu año de nacimiento?");
-		int year_nacimiento = sc.nextInt();
-		int edad = year_actual - year_nacimiento;
-		System.out.print("Tu edad es: " + edad + " años");
+		
+		int num1, num2;
+		
+		System.out.println("Dime un número");
+		num1 = sc.nextInt();
+		
+		System.out.println("Dime otro número");
+		num2 = sc.nextInt();
+		
+		if (num1 > num2) {
+			System.out.println("El mayor número es: " + num1);
+			
+		} else if (num1 == num2) {
+			System.out.println("Los números son iguales ");
+		} else {
+			System.out.println("El mayor número es: " + num2);
+		}
 	}
 
 }

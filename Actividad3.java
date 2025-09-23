@@ -3,9 +3,21 @@ public class Actividad3 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Dime tu edad: ");
-		int edad = sc.nextInt();
-		System.out.println("La edad del usuario será: " + (edad+1));
+		
+		int num1, num2;
+		
+		System.out.println("Dime un número");
+		num1 = sc.nextInt();
+		
+		System.out.println("Dime otro número");
+		num2 = sc.nextInt();
+		
+		if (num1 > num2) {
+			System.out.println("El mayor número es: " + num1);
+			
+		} else {
+			System.out.println("El mayor número es: " + num2);
+		} 
 	}
 
 }

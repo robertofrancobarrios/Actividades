@@ -1,8 +1,17 @@
-
+import java.util.Scanner;
 public class Actividad1 {
 
 	public static void main(String[] args) {
-		System.out.println("Hola mundo");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Inserta un número: ");
+		int numero = sc.nextInt();
+		
+		if (numero % 2 == 0) {
+			System.out.println("Es par");
+		
+		} else {
+			System.out.println("Es impar");
+		}
 
 	}
 
